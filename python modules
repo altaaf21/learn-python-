@@ -1,0 +1,50 @@
+-> Python Modules
+
+A module is simply a Python file (`.py`) containing a set of functions, classes, or variables that you want to include in your application.
+
+Modules help keep your code modular, organized, and reusable across multiple project files.
+
+---
+
+1) Creating and Importing a Custom Module
+
+   # Step 1: Save code in a file named mymodule.py
+   def greeting(name):
+       print("Hello, " + name)
+
+   # Step 2: Import and use it in another Python file
+   import mymodule
+
+   mymodule.greeting("Alice")  # Output: Hello, Alice
+
+2) Variables in a Module
+   # In mymodule.py:
+   person1 = {"name": "John", "age": 36}
+
+   # In main.py:
+   import mymodule
+
+   print(mymodule.person1["age"])  # Output: 36
+
+3) Re-naming a Module (Using 'as')
+   import mymodule as mx
+
+   mx.greeting("Bob")
+
+4) Importing Built-in Modules
+   # Python comes with many built-in modules (e.g., math, random, datetime, os)
+   import math
+
+   print(math.sqrt(64))  # Output: 8.0
+
+5) Importing Specific Parts from a Module (Using 'from')
+   # Import only the greeting function, not the whole module
+   from mymodule import greeting
+
+   greeting("Charlie")  # Called directly without 'mymodule.'
+
+6) The `dir()` Function
+   # Lists all function/variable names in a module
+   import math
+
+   print(dir(math))
