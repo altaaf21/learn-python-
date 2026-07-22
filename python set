@@ -1,0 +1,39 @@
+-> Python Sets
+
+A set is used to store multiple items in a single variable. Sets are unordered, unchangeable (immutable*), unindexed, and DO NOT allow duplicate values.
+
+Sets are written with curly brackets `{}`.
+
+1) Creating a Set
+   fruits = {"apple", "banana", "cherry"}
+   print(fruits)  # Output: {'banana', 'cherry', 'apple'} (order may vary)
+
+2) Duplicates Are Ignored
+   fruits = {"apple", "banana", "cherry", "apple"}
+   print(fruits)  # Output: {'apple', 'banana', 'cherry'}
+
+3) Accessing Items (Cannot use index like fruits[0])
+   fruits = {"apple", "banana", "cherry"}
+   for item in fruits:
+       print(item)
+
+4) Adding Items
+   fruits = {"apple", "banana"}
+   fruits.add("orange")
+   print(fruits)  # Output: {'apple', 'banana', 'orange'}
+
+5) Removing Items
+   fruits = {"apple", "banana", "cherry"}
+   fruits.remove("banana")  # Raises error if item doesn't exist
+   fruits.discard("mango")  # Does NOT raise an error if item is missing
+   print(fruits)
+
+6) Checking Set Length
+   fruits = {"apple", "banana", "cherry"}
+   print(len(fruits))  # Output: 3
+
+7) Joining Sets
+   set1 = {"a", "b", "c"}
+   set2 = {1, 2, 3}
+   set3 = set1.union(set2)  # Combines both sets
+   print(set3)
