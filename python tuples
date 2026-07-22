@@ -1,0 +1,37 @@
+-> Python Tuples
+
+A tuple is used to store multiple items in a single variable. Unlike lists, tuples are ordered, unchangeable (immutable), and allow duplicate values. 
+
+Tuples are written with round brackets `()`.
+
+1) Creating a Tuple
+   fruits = ("apple", "banana", "cherry")
+   print(fruits)  # Output: ('apple', 'banana', 'cherry')
+
+2) Accessing Items (Indexed starting from 0)
+   fruits = ("apple", "banana", "cherry")
+   print(fruits[0])   # Output: apple
+   print(fruits[-1])  # Output: cherry (last item)
+
+3) Tuples are Unchangeable (Immutable)
+   # You CANNOT add, remove, or change items directly after creation.
+   fruits = ("apple", "banana", "cherry")
+   # fruits[0] = "mango"  # This will cause an ERROR!
+
+4) Tuple with One Item (Must include a trailing comma)
+   single_item = ("apple",)  # Tuple
+   not_a_tuple = ("apple")   # String
+
+5) Checking Tuple Length
+   fruits = ("apple", "banana", "cherry")
+   print(len(fruits))  # Output: 3
+
+6) Unpacking a Tuple (Extracting values into variables)
+   fruits = ("apple", "banana", "cherry")
+   (green, yellow, red) = fruits
+   print(yellow)  # Output: banana
+
+7) Looping Through a Tuple
+   fruits = ("apple", "banana", "cherry")
+   for item in fruits:
+       print(item)
