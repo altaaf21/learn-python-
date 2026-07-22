@@ -1,0 +1,41 @@
+-> Python Lists
+
+Lists are used to store multiple items in a single variable. They are one of 4 built-in data types in Python used to store collections of data.
+
+Key Features:
+* Ordered: Items have a defined order that will not change.
+* Changeable (Mutable): You can change, add, and remove items after creation.
+* Allow Duplicates: Lists can have items with the same value.
+
+1) Creating a List
+   fruits = ["apple", "banana", "cherry"]
+   print(fruits)  # Output: ['apple', 'banana', 'cherry']
+
+2) Accessing Items (Indexed starting from 0)
+   fruits = ["apple", "banana", "cherry"]
+   print(fruits[0])   # Output: apple
+   print(fruits[-1])  # Output: cherry (last item)
+
+3) Changing an Item
+   fruits = ["apple", "banana", "cherry"]
+   fruits[1] = "mango"
+   print(fruits)  # Output: ['apple', 'mango', 'cherry']
+
+4) Adding Items
+   fruits = ["apple", "banana"]
+   fruits.append("orange")  # Adds to the end
+   print(fruits)  # Output: ['apple', 'banana', 'orange']
+
+5) Removing Items
+   fruits = ["apple", "banana", "cherry"]
+   fruits.remove("banana")
+   print(fruits)  # Output: ['apple', 'cherry']
+
+6) Checking List Length
+   fruits = ["apple", "banana", "cherry"]
+   print(len(fruits))  # Output: 3
+
+7) Looping Through a List
+   fruits = ["apple", "banana", "cherry"]
+   for item in fruits:
+       print(item)
