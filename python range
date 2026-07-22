@@ -1,0 +1,28 @@
+-> Python range() Function
+
+The range() function returns a sequence of numbers. It is commonly used in loops to repeat an action a specific number of times.
+
+Syntax: range(start, stop, step)
+* start : (Optional) Starting number. Default is 0.
+* stop  : (Required) Number to stop at (NOT included).
+* step   : (Optional) Increment/difference between each number. Default is 1.
+
+1) Basic range(stop) - Starts at 0, ends at stop - 1
+   for x in range(5):
+       print(x)  # Output: 0, 1, 2, 3, 4
+
+2) range(start, stop) - Custom start and end
+   for x in range(2, 6):
+       print(x)  # Output: 2, 3, 4, 5
+
+3) range(start, stop, step) - Custom step size
+   for x in range(1, 10, 2):
+       print(x)  # Output: 1, 3, 5, 7, 9
+
+4) Negative step (Counting backwards)
+   for x in range(5, 0, -1):
+       print(x)  # Output: 5, 4, 3, 2, 1
+
+5) Converting range() to a List
+   numbers = list(range(1, 6))
+   print(numbers)  # Output: [1, 2, 3, 4, 5]
