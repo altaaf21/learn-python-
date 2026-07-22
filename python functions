@@ -1,0 +1,52 @@
+-> Python Functions
+
+A function is a block of reusable code that runs only when it is called. You can pass data (parameters) into a function, and it can return data as a result.
+
+Functions help keep code organized, clean, and DRY (Don't Repeat Yourself).
+
+1) Defining and Calling a Function
+   # Defined using the 'def' keyword
+   def my_function():
+       print("Hello from a function!")
+
+   my_function()  # Call the function
+
+2) Arguments / Parameters (Passing data into a function)
+   def greet(name):
+       print("Hello, " + name)
+
+   greet("Alice")  # Output: Hello, Alice
+   greet("Bob")    # Output: Hello, Bob
+
+3) Default Parameter Value
+   def my_country(country = "India"):
+       print("I am from " + country)
+
+   my_country("Norway")  # Output: I am from Norway
+   my_country()          # Output: I am from India (uses default)
+
+4) The 'return' Statement (Returning a value)
+   def add_numbers(x, y):
+       return x + y
+
+   result = add_numbers(5, 3)
+   print(result)  # Output: 8
+
+5) Arbitrary Arguments (*args)
+   # Use *args if you don't know how many positional arguments will be passed.
+   def my_func(*kids):
+       print("The youngest child is " + kids[2])
+
+   my_func("Emil", "Tobias", "Linus")  # Output: The youngest child is Linus
+
+6) Keyword Arguments (**kwargs)
+   # Use **kwargs if you don't know how many key-value arguments will be passed.
+   def my_func(**person):
+       print("His last name is " + person["lname"])
+
+   my_func(fname = "Tobias", lname = "Refsnes")  # Output: His last name is Refsnes
+
+7) The 'pass' Statement
+   # Function definitions cannot be empty. Use 'pass' to avoid an error.
+   def my_empty_function():
+       pass
