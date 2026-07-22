@@ -1,0 +1,51 @@
+-> Python Dictionaries
+
+A dictionary is used to store data values in key:value pairs. Dictionaries are ordered*, changeable (mutable), and DO NOT allow duplicate keys.
+
+Dictionaries are written with curly brackets `{}` and have keys and values.
+
+1) Creating a Dictionary
+   thisdict = {
+       "brand": "Ford",
+       "model": "Mustang",
+       "year": 1964
+   }
+   print(thisdict)  # Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+
+2) Accessing Items (Using key name)
+   thisdict = {"brand": "Ford", "model": "Mustang"}
+   print(thisdict["model"])  # Output: Mustang
+
+3) Changing / Updating Values
+   thisdict = {"brand": "Ford", "model": "Mustang", "year": 1964}
+   thisdict["year"] = 2020
+   print(thisdict["year"])  # Output: 2020
+
+4) Adding New Items
+   thisdict = {"brand": "Ford", "model": "Mustang"}
+   thisdict["color"] = "red"
+   print(thisdict)  # Output: {'brand': 'Ford', 'model': 'Mustang', 'color': 'red'}
+
+5) Removing Items
+   thisdict = {"brand": "Ford", "model": "Mustang", "year": 1964}
+   thisdict.pop("model")  # Removes the "model" key
+   print(thisdict)
+
+6) Checking Dictionary Length
+   thisdict = {"brand": "Ford", "model": "Mustang", "year": 1964}
+   print(len(thisdict))  # Output: 3
+
+7) Looping Through a Dictionary
+   thisdict = {"brand": "Ford", "model": "Mustang"}
+   
+   # Print all key names:
+   for key in thisdict:
+       print(key)
+
+   # Print all values:
+   for value in thisdict.values():
+       print(value)
+
+   # Print both keys and values:
+   for key, value in thisdict.items():
+       print(key, value)
