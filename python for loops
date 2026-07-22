@@ -1,0 +1,53 @@
+-> Python For Loops
+
+A `for` loop is used to iterate over a sequence (such as a list, tuple, dictionary, set, string, or range) and execute a block of code for each item.
+
+Unlike a `while` loop, a `for` loop automatically stops when it reaches the end of the sequence.
+
+1) Looping Through a List / Tuple
+   fruits = ["apple", "banana", "cherry"]
+   for item in fruits:
+       print(item)
+
+2) Looping Through a String (Iterating characters)
+   for letter in "Python":
+       print(letter)
+
+3) The `range()` Function
+   # range(start, stop, step) - generates numbers up to (but not including) the stop value
+   
+   for x in range(5):        # Loops 0 to 4
+       print(x)
+
+   for x in range(2, 6):     # Loops 2 to 5
+       print(x)
+
+   for x in range(0, 10, 2):  # Loops 0, 2, 4, 6, 8 (step of 2)
+       print(x)
+
+4) The `break` Statement (Exits loop early)
+   fruits = ["apple", "banana", "cherry"]
+   for item in fruits:
+       if item == "banana":
+           break  # Stops the loop when 'banana' is reached
+       print(item)
+
+5) The `continue` Statement (Skips current item and moves to next)
+   fruits = ["apple", "banana", "cherry"]
+   for item in fruits:
+       if item == "banana":
+           continue  # Skips 'banana'
+       print(item)
+
+6) Nested For Loops (Loop inside a loop)
+   colors = ["red", "big"]
+   fruits = ["apple", "banana"]
+
+   for color in colors:
+       for fruit in fruits:
+           print(color, fruit)
+
+7) The `pass` Statement
+   # 'for' loops cannot be empty. Use 'pass' to avoid errors if writing logic later.
+   for x in [0, 1, 2]:
+       pass
