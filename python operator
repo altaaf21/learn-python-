@@ -1,0 +1,41 @@
+-> Python Operators
+
+Operators are special symbols used to perform operations on variables and values.
+
+1) Arithmetic Operators (Used for basic math)
+   * +  (Addition): 5 + 3        # Output: 8
+   * -  (Subtraction): 5 - 3     # Output: 2
+   * *  (Multiplication): 5 * 3  # Output: 15
+   * /  (Division): 5 / 2        # Output: 2.5
+   * %  (Modulus / Remainder): 5 % 2   # Output: 1
+   * ** (Exponentiation / Power): 2 ** 3  # Output: 8
+   * // (Floor Division / Whole number division): 5 // 2  # Output: 2
+
+2) Assignment Operators (Used to assign values to variables)
+   * =  (Assign): x = 5
+   * += (Add and assign): x += 3  # Same as x = x + 3
+   * -= (Subtract and assign): x -= 2  # Same as x = x - 2
+
+3) Comparison Operators (Used to compare two values, returns True or False)
+   * == (Equal to): 5 == 5        # Output: True
+   * != (Not equal to): 5 != 3    # Output: True
+   * >  (Greater than): 5 > 3    # Output: True
+   * <  (Less than): 5 < 3       # Output: False
+   * >= (Greater than or equal to): 5 >= 5  # Output: True
+   * <= (Less than or equal to): 5 <= 3     # Output: False
+
+4) Logical Operators (Used to combine conditional statements)
+   * and (Returns True if BOTH statements are true): x > 3 and x < 10
+   * or  (Returns True if AT LEAST ONE statement is true): x > 5 or x < 4
+   * not (Reverses the result, returns False if true): not(x > 3 and x < 10)
+
+5) Identity Operators (Used to check if objects are stored in the same memory location)
+   * is     (Returns True if both variables are the exact same object): x is y
+   * is not (Returns True if both variables are not the same object): x is not y
+
+6) Membership Operators (Used to test if a sequence/value is present in an object)
+   * in     (Returns True if value is found in sequence): "a" in "apple"
+   * not in (Returns True if value is not found in sequence): "z" not in "apple"
+
+7) Bitwise Operators (Used to compare binary numbers)
+   * & (AND), | (OR), ^ (XOR), ~ (NOT), << (Zero fill left shift), >> (Signed right shift)
