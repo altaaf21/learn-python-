@@ -1,0 +1,49 @@
+-> Python if and else Statements (Conditionals)
+
+If statements are used to make decisions in code. They execute a block of code ONLY IF a specified condition is True.
+
+Key Logic:
+* if   : "Check this condition first."
+* elif : "If the previous conditions were False, try this one." (Short for 'else if')
+* else : "If ALL previous conditions were False, do this instead."
+
+1) Basic 'if' Statement
+   x = 10
+   y = 5
+   if x > y:
+       print("x is greater than y")
+
+2) Using 'elif' and 'else'
+   age = 18
+   if age < 13:
+       print("Child")
+   elif age < 20:
+       print("Teenager")
+   else:
+       print("Adult")
+
+3) Short Hand If (One-line)
+   a = 5
+   b = 2
+   if a > b: print("a is greater than b")
+
+4) Short Hand If...Else (Ternary Operator)
+   a = 5
+   b = 10
+   print("A") if a > b else print("B")  # Output: B
+
+5) Nested 'if' Statements (An if statement inside an if statement)
+   x = 15
+   if x > 10:
+       print("Above 10,")
+       if x > 20:
+           print("and also above 20!")
+       else:
+           print("but not above 20.")
+
+6) The 'pass' Statement
+   # 'if' statements cannot be empty. If you need an empty 'if', use 'pass' to avoid errors.
+   a = 33
+   b = 200
+   if b > a:
+       pass
