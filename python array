@@ -1,0 +1,46 @@
+-> Python Arrays
+
+Note: Python does not have built-in support for native arrays. Instead, Python **Lists** are commonly used as arrays. 
+
+However, if you need true arrays, you can use Python's built-in `array` module (for basic single-type data) or the `NumPy` library (for data science/advanced math).
+
+---
+
+Option 1: Using Python Lists as Arrays (Most Common)
+
+Lists can be used as arrays to store multiple values of the same type.
+
+1) Creating an Array (List)
+   cars = ["Ford", "Volvo", "BMW"]
+
+2) Accessing Elements
+   cars = ["Ford", "Volvo", "BMW"]
+   print(cars[0])  # Output: Ford
+
+3) Modifying Elements
+   cars = ["Ford", "Volvo", "BMW"]
+   cars[0] = "Toyota"
+   print(cars)  # Output: ['Toyota', 'Volvo', 'BMW']
+
+4) Array Length
+   cars = ["Ford", "Volvo", "BMW"]
+   print(len(cars))  # Output: 3
+
+5) Adding / Removing Elements
+   cars = ["Ford", "Volvo", "BMW"]
+   cars.append("Honda")  # Adds item at the end
+   cars.pop(1)          # Removes item at index 1 ("Volvo")
+
+---
+
+Option 2: Using the Built-in 'array' Module
+
+If you specifically need an array that only holds a single data type (e.g., only integers), import the `array` module.
+
+import array as arr
+
+# 'i' stands for signed integer
+numbers = arr.array('i', [1, 2, 3, 4, 5])
+
+print(numbers)     # Output: array('i', [1, 2, 3, 4, 5])
+print(numbers[0])  # Output: 1
